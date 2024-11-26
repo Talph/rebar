@@ -1,0 +1,628 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 .title,
+.heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Proza Libre", sans-serif;
+}
+
+.custom-menu {
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.gallery-page * {
+    max-width: 100%;
+}
+
+.top-menu {
+    background-color: #0a2941;
+}
+
+.text-blank {
+    color: transparent;
+    display: none;
+}
+
+.va {
+    vertical-align: 0.2em;
+}
+
+.ms {
+    font-size: 28px;
+}
+
+.ms.bi-youtube {
+    color: red;
+}
+
+.bg-trans {
+    background-color: #ffffff0f;
+}
+
+.border-radius-5 {
+    border-radius: 5%;
+}
+
+.project-section {
+    border-radius: 15px;
+    background-color: #062536;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.project-section-second {
+    border-radius: 15px;
+    background-color: #fdfdfd;
+    padding: 20px;
+}
+
+.proj-number,
+.proj__client {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.proj__client span {
+    font-weight: 600;
+    color: #0a2941;
+}
+
+.bg-dark-ci {
+    background-color: #0a2941 !important;
+}
+
+.title,
+.title-top {
+    margin-top: 20px;
+}
+
+.desc-proj,
+.proj-summary {
+    margin-top: 20px;
+}
+
+.title-top h4 {
+    text-transform: uppercase;
+    color: #0a2941;
+}
+
+.carousel-caption {
+    text-align: center;
+    bottom: 45%;
+    top: 45%;
+}
+
+//.hero {
+//position: relative;
+//  background: url('/images/jpeg/hero.jpg') center;
+//}
+.hero {
+    //height: calc(100vh - 30vh);
+    max-height: 750px;
+    overflow: hidden;
+}
+
+#rebar-image {
+    min-width: 100vw !important;
+    min-height: 100vh;
+}
+
+.hero-content {
+    position: absolute;
+    color: #f1f1f1;
+    width: 100%;
+    top: 250px;
+    bottom: 0;
+    text-align: left;
+}
+
+.brief__container_ {
+    padding: 125px 80px;
+    color: #ffffff;
+}
+
+.text-justify {
+    word-spacing: -2px;
+}
+
+.overlay-data {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-container .project-container-card {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.project-container-card:hover .image {
+    opacity: 0.5;
+}
+
+.project-container-card:hover .overlay-data {
+    opacity: 1;
+}
+
+.bg-black {
+    background: #000000;
+}
+
+.bg-navy {
+    background: #272363;
+}
+
+.brief_img_container_ {
+    background: url('~/images/jpeg/about.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dot {
+    font-size: 100%;
+}
+
+.numbers {
+    margin: 150px 0;
+}
+
+.btn,
+button {
+    font-size: 1rem;
+}
+
+.h-350 {
+    height: 350px;
+}
+
+.content-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.first-letter::first-letter {
+    font-size: 200%;
+    color: #8a2be2;
+}
+
+.table {
+    font-size: 0.8rem;
+}
+
+.h-height {
+    height: 70px;
+}
+
+.nav-right {
+    right: 0;
+}
+
+.chevron {
+    position: absolute;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: "";
+    height: 0.45em;
+    width: 0.45em;
+}
+
+.card-p {
+    width: 100%;
+}
+
+.chevron.right {
+    transform: rotate(45deg);
+    margin-right: 4px;
+}
+
+.chevron.left {
+    transform: rotate(-135deg);
+    margin-left: 4px;
+}
+
+.nav-p-left {
+    left: 0;
+}
+
+.nav-p-right {
+    right: 0;
+}
+
+.nav-p {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1020;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    border: 0.2px solid silver;
+}
+
+.grid-gallery-item img {
+    cursor: pointer;
+}
+
+.grid-gallery-item {
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline;
+    width: 25%;
+}
+
+.grid-gallery {
+    max-width: 95vw;
+    margin: 2.5vw auto;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.about__p {
+    padding-right: 100px;
+}
+
+.overview-bg {
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mission-vision-bg {
+    background-image: url(/images/jpeg/construction.jpeg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.mission-vision-bg__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 105px 0;
+}
+
+.services-page .card {
+    padding: 50px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.background_rebar {
+    background-image: url("~/images/jpeg/hero.jpg");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    //text-align: center;
+}
+
+.why-choose {
+    min-height: 350px;
+    border-top: 5px solid #F9BE0A;
+}
+
+.fa-5xl {
+    font-size: 5em;
+    line-height: .03125em;
+    vertical-align: -.75em;
+}
+
+.bg-why {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: #000000;
+}
+
+a.nav-link {
+    margin-left: 2rem;
+    font-size: 14px;
+}
+
+a.nav-link:hover {
+    color: #9e0505 !important;
+}
+
+.dropdown-menu {
+    margin-top: 15px;
+}
+
+.covid-19 {
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    //background-color: rgb(0 0 0 / 55%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .9), rgba(255, 255, 255, .7), rgba(255, 255, 255, .3));
+    position: absolute;
+    top: 0;
+}
+
+.app_gradient {
+    padding: 150px 0;
+    background: #63cdf6;
+    background: linear-gradient(90deg, #63cdf6 0, #a0c135 98%, #a0c135 100%);
+}
+
+.color-ci {
+    color: #b3d235;
+}
+
+.quick-call,
+.quick-contact {
+    padding: 10px;
+    left: -125px;
+    z-index: 999;
+    width: 170px;
+}
+
+.quick-contact {
+    top: 50%;
+}
+
+.quick-call {
+    top: 55%;
+}
+
+.quick-call:hover,
+.quick-contact:hover {
+    left: -2px;
+    transition-duration: 2s;
+}
+
+.merrit-cornell-products {
+    position: absolute;
+    top: -25%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1440px) {
+    .carousel-caption {
+        left: 12%;
+    }
+
+    .quick-call,
+    .quick-contact {
+        left: -6%;
+    }
+}
+
+@media only screen and (max-width: 1536px) {
+    .carousel-caption {
+        left: 13%;
+    }
+
+    .quick-call,
+    .quick-contact {
+        left: -7%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .quick-call,
+    .quick-contact {
+        left: -10%;
+    }
+
+    .quick-contact {
+        top: 48%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-caption {
+        left: 5%;
+    }
+
+    .quick-call,
+    .quick-contact {
+        left: -13%;
+    }
+
+    .quick-contact {
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-caption {
+        left: 5%;
+    }
+
+    .merrit-cornell-products {
+        position: relative;
+        top: 0;
+    }
+
+    .quick-call,
+    .quick-contact {
+        left: -13%;
+    }
+
+    .about__p {
+        padding-right: 0;
+    }
+
+    .quick-contact {
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .quick-call,
+    .quick-contact {
+        left: -13%;
+    }
+
+    .mission-vision-bg__overlay {
+        padding: 20px 0;
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .quick-call {
+        top: 58%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .quick-call,
+    .quick-contact {
+        left: -18%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a.nav-link {
+        margin-left: 0;
+    }
+
+    .carousel-caption {
+        text-align: left;
+        bottom: -15%;
+        left: 5%;
+    }
+
+    .h1,
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .merrit-cornell-products {
+        position: relative;
+        top: 0;
+    }
+
+    .quick-call,
+    .quick-contact {
+        left: -32%;
+    }
+
+    .mission-vision-bg {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .quick-call,
+    .quick-contact {
+        left: -35%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .quick-call,
+    .quick-contact {
+        left: -37%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .quick-call,
+    .quick-contact {
+        left: -42%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .quick-call,
+    .quick-contact {
+        left: -47%;
+    }
+
+    .mission-vision-bg {
+        height: 150vh;
+    }
+}
+
+.quick-text {
+    margin-right: 15px;
+    font-size: 1rem !important;
+}

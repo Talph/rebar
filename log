@@ -1,0 +1,429 @@
+<details>
+<summary>sw_vers</summary>
+<pre>ProductName:		macOS
+ProductVersion:		13.4.1
+ProductVersionExtra:	(c)
+BuildVersion:		22F770820d</pre>
+</details>
+<details>
+<summary>valet --version</summary>
+<pre>Laravel Valet 4.1.3</pre>
+</details>
+<details>
+<summary>cat ~/.config/valet/config.json</summary>
+<pre>{
+    "tld": "test",
+    "loopback": "127.0.0.1",
+    "paths": []
+}</pre>
+</details>
+<details>
+<summary>cat ~/.composer/composer.json</summary>
+<pre>{
+    "require": {
+        "laravel/valet": "^4.1"
+    }
+}</pre>
+</details>
+<details>
+<summary>composer global diagnose</summary>
+<pre>Changed current directory to /Users/talph/.composer
+Checking composer.json: WARNING
+No license specified, it is recommended to do so. For closed-source software you may use "proprietary" as license.
+Checking platform settings: OK
+Checking git settings: OK git version 2.39.2
+Checking http connectivity to packagist: OK
+Checking https connectivity to packagist: OK
+Checking github.com rate limit: OK
+Checking disk free space: OK
+Checking pubkeys:
+Tags Public Key Fingerprint: 57815BA2 7E54DC31 7ECC7CC5 573090D0  87719BA6 8F3BB723 4E5D42D0 84A14642
+Dev Public Key Fingerprint: 4AC45767 E5EC2265 2F0C1167 CBBB8A2B  0C708369 153E328C AD90147D AFE50952
+OK
+Checking composer version: You are not running the latest stable version, run `composer self-update` to update (2.5.5 => 2.5.8)
+Composer version: 2.5.5
+PHP version: 8.2.6
+PHP binary path: /Users/talph/Library/Application Support/Herd/bin/php82
+OpenSSL version: OpenSSL 3.1.0 14 Mar 2023
+cURL version: 8.1.2 libz 1.2.13 ssl OpenSSL/3.1.0
+zip: extension present, unzip present, 7-Zip not available</pre>
+</details>
+<details>
+<summary>composer global outdated</summary>
+<pre>Changed current directory to /Users/talph/.composer
+Info from https://repo.packagist.org: #StandWithUkraine
+
+Direct dependencies required in composer.json:
+Everything up to date
+
+Transitive dependencies not required in composer.json:
+Everything up to date</pre>
+</details>
+<details>
+<summary>ls -al /etc/sudoers.d/</summary>
+<pre>total 24
+drwxr-xr-x   5 root  wheel   160 Jul 20 13:16 .
+drwxr-xr-x  81 root  wheel  2592 Jul 20 10:43 ..
+-rw-r--r--   1 root  wheel    83 Apr 24  2022 brew
+-rw-r--r--   1 root  wheel    80 Jul 20 13:16 herd
+-rw-r--r--   1 root  wheel    86 Apr 24  2022 valet</pre>
+</details>
+<details>
+<summary>brew config</summary>
+<pre>HOMEBREW_VERSION: 4.1.0
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: ac93842f8d13913f462aedb246cfacd08d6b7f05
+Last commit: 2 days ago
+Core tap JSON: 21 Jul 14:51 UTC
+HOMEBREW_PREFIX: /opt/homebrew
+HOMEBREW_CASK_OPTS: []
+HOMEBREW_MAKE_JOBS: 8
+Homebrew Ruby: 2.6.10 => /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby
+CPU: octa-core 64-bit arm_firestorm_icestorm
+Clang: 14.0.3 build 1403
+Git: 2.39.2 => /Library/Developer/CommandLineTools/usr/bin/git
+Curl: 7.88.1 => /usr/bin/curl
+macOS: 13.4.1-arm64
+CLT: 14.3.1.0.1.1683849156
+Xcode: N/A
+Rosetta 2: false</pre>
+</details>
+<details>
+<summary>brew services list</summary>
+<pre>Name      Status User  File
+dnsmasq   error  512      root  ~/Library/LaunchAgents/homebrew.mxcl.dnsmasq.plist
+httpd     started         talph ~/Library/LaunchAgents/homebrew.mxcl.httpd.plist
+mysql     started         talph ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+mysql@5.7 none
+nginx     error  256      root  ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+php       started         root  ~/Library/LaunchAgents/homebrew.mxcl.php.plist
+php@7.4   none            root
+php@8.0   none            root
+php@8.1   none</pre>
+</details>
+<details>
+<summary>brew list --formula --versions | grep -E "(php|nginx|dnsmasq|mariadb|mysql|mailhog|openssl)(@\d\..*)?\s"</summary>
+<pre>dnsmasq 2.89
+mysql 8.0.33_3
+mysql@5.7 5.7.43
+nginx 1.25.1_1
+openssl@1.1 1.1.1u
+php 8.2.8
+php@7.4 7.4.33
+php@8.0 8.0.29_1
+php@8.1 8.1.21</pre>
+</details>
+<details>
+<summary>brew outdated</summary>
+<pre></pre>
+</details>
+<details>
+<summary>brew tap</summary>
+<pre>homebrew/services
+nicoverbruggen/cask
+phalcon/extension
+shivammathur/php</pre>
+</details>
+<details>
+<summary>php -v</summary>
+<pre>PHP 8.2.6 (cli) (built: Jun  2 2023 23:59:34) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.2.6, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.6, Copyright (c), by Zend Technologies</pre>
+</details>
+<details>
+<summary>which -a php</summary>
+<pre>/Users/talph/Library/Application Support/Herd/bin//php
+/opt/homebrew/bin/php</pre>
+</details>
+<details>
+<summary>php --ini</summary>
+<pre>Configuration File (php.ini) Path: /lib
+Loaded Configuration File:         (none)
+Scan for additional .ini files in: (none)
+Additional .ini files parsed:      (none)</pre>
+</details>
+<details>
+<summary>nginx -v</summary>
+<pre>nginx version: nginx/1.25.1</pre>
+</details>
+<details>
+<summary>curl --version</summary>
+<pre>curl 7.88.1 (x86_64-apple-darwin22.0) libcurl/7.88.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.51.0
+Release-Date: 2023-02-20
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
+Features: alt-svc AsynchDNS GSS-API HSTS HTTP2 HTTPS-proxy IPv6 Kerberos Largefile libz MultiSSL NTLM NTLM_WB SPNEGO SSL threadsafe UnixSockets</pre>
+</details>
+<details>
+<summary>php --ri curl</summary>
+<pre>curl
+
+cURL support => enabled
+cURL Information => 8.1.2
+Age => 10
+Features
+AsynchDNS => Yes
+CharConv => No
+Debug => No
+GSS-Negotiate => No
+IDN => No
+IPv6 => Yes
+krb4 => No
+Largefile => Yes
+libz => Yes
+NTLM => Yes
+NTLMWB => No
+SPNEGO => No
+SSL => Yes
+SSPI => No
+TLS-SRP => No
+HTTP2 => No
+GSSAPI => No
+KERBEROS5 => No
+UNIX_SOCKETS => Yes
+PSL => No
+HTTPS_PROXY => Yes
+MULTI_SSL => No
+BROTLI => No
+ALTSVC => Yes
+HTTP3 => No
+UNICODE => No
+ZSTD => No
+HSTS => Yes
+GSASL => No
+Protocols => dict, file, ftp, ftps, gopher, gophers, http, https, imap, imaps, mqtt, pop3, pop3s, rtsp, smb, smbs, smtp, smtps, telnet, tftp
+Host => Darwin
+SSL Version => OpenSSL/3.1.0
+ZLib Version => 1.2.13
+
+Directive => Local Value => Master Value
+curl.cainfo => no value => no value</pre>
+</details>
+<details>
+<summary>/opt/homebrew/bin/ngrok version</summary>
+<pre>sudo: /opt/homebrew/bin/ngrok: command not found</pre>
+</details>
+<details>
+<summary>ls -al ~/.ngrok2</summary>
+<pre>ls: /Users/talph/.ngrok2: No such file or directory</pre>
+</details>
+<details>
+<summary>brew info nginx</summary>
+<pre>==> nginx: stable 1.25.1 (bottled), HEAD
+HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+https://nginx.org/
+/opt/homebrew/Cellar/nginx/1.25.1_1 (26 files, 2.4MB) *
+  Poured from bottle using the formulae.brew.sh API on 2023-06-29 at 16:23:18
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/nginx.rb
+License: BSD-2-Clause
+==> Dependencies
+Required: openssl@3, pcre2
+==> Options
+--HEAD
+	Install HEAD version
+==> Caveats
+Docroot is: /opt/homebrew/var/www
+
+The default port has been set in /opt/homebrew/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /opt/homebrew/etc/nginx/servers/.
+
+To restart nginx after an upgrade:
+  brew services restart nginx
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/nginx/bin/nginx -g daemon off;
+==> Analytics
+install: 16,523 (30 days), 56,792 (90 days), 75,079 (365 days)
+install-on-request: 16,499 (30 days), 56,718 (90 days), 74,976 (365 days)
+build-error: 4 (30 days)</pre>
+</details>
+<details>
+<summary>brew info php</summary>
+<pre>==> php: stable 8.2.8 (bottled), HEAD
+General-purpose scripting language
+https://www.php.net/
+/opt/homebrew/Cellar/php/8.2.8 (520 files, 83.5MB) *
+  Poured from bottle using the formulae.brew.sh API on 2023-07-21 at 16:02:49
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/php.rb
+License: PHP-3.01
+==> Dependencies
+Build: httpd, pkg-config
+Required: apr, apr-util, argon2, aspell, autoconf, curl, freetds, gd, gettext, gmp, icu4c, krb5, libpq, libsodium, libzip, oniguruma, openldap, openssl@3, pcre2, sqlite, tidy-html5, unixodbc
+==> Options
+--HEAD
+	Install HEAD version
+==> Caveats
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
+    LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
+
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+Finally, check DirectoryIndex includes index.php
+    DirectoryIndex index.php index.html
+
+The php.ini and php-fpm.ini file can be found in:
+    /opt/homebrew/etc/php/8.2/
+
+To restart php after an upgrade:
+  brew services restart php
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/php/sbin/php-fpm --nodaemonize
+==> Analytics
+install: 46,812 (30 days), 162,445 (90 days), 211,156 (365 days)
+install-on-request: 43,229 (30 days), 150,407 (90 days), 195,430 (365 days)
+build-error: 58 (30 days)</pre>
+</details>
+<details>
+<summary>brew info openssl</summary>
+<pre>==> openssl@3: stable 3.1.1 (bottled)
+Cryptography and SSL/TLS Toolkit
+https://openssl.org/
+/opt/homebrew/Cellar/openssl@3/3.1.1_1 (6,495 files, 28.4MB) *
+  Poured from bottle using the formulae.brew.sh API on 2023-06-29 at 16:22:24
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/openssl@3.rb
+License: Apache-2.0
+==> Dependencies
+Required: ca-certificates
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /opt/homebrew/etc/openssl@3/certs
+
+and run
+  /opt/homebrew/opt/openssl@3/bin/c_rehash
+==> Analytics
+install: 317,321 (30 days), 689,807 (90 days), 828,611 (365 days)
+install-on-request: 42,696 (30 days), 186,563 (90 days), 225,356 (365 days)
+build-error: 1,009 (30 days)</pre>
+</details>
+<details>
+<summary>openssl version -a</summary>
+<pre>OpenSSL 3.1.1 30 May 2023 (Library: OpenSSL 3.1.1 30 May 2023)
+built on: Tue May 30 12:13:24 2023 UTC
+platform: darwin64-arm64-cc
+options:  bn(64,64)
+compiler: clang -fPIC -arch arm64 -O3 -Wall -DL_ENDIAN -DOPENSSL_PIC -D_REENTRANT -DOPENSSL_BUILDING_OPENSSL -DNDEBUG
+OPENSSLDIR: "/opt/homebrew/etc/openssl@3"
+ENGINESDIR: "/opt/homebrew/Cellar/openssl@3/3.1.1_1/lib/engines-3"
+MODULESDIR: "/opt/homebrew/Cellar/openssl@3/3.1.1_1/lib/ossl-modules"
+Seeding source: os-specific
+CPUINFO: OPENSSL_armcap=0x187d</pre>
+</details>
+<details>
+<summary>openssl ciphers</summary>
+<pre>TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:RSA-PSK-AES256-GCM-SHA384:DHE-PSK-AES256-GCM-SHA384:RSA-PSK-CHACHA20-POLY1305:DHE-PSK-CHACHA20-POLY1305:ECDHE-PSK-CHACHA20-POLY1305:AES256-GCM-SHA384:PSK-AES256-GCM-SHA384:PSK-CHACHA20-POLY1305:RSA-PSK-AES128-GCM-SHA256:DHE-PSK-AES128-GCM-SHA256:AES128-GCM-SHA256:PSK-AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:ECDHE-PSK-AES256-CBC-SHA384:ECDHE-PSK-AES256-CBC-SHA:SRP-RSA-AES-256-CBC-SHA:SRP-AES-256-CBC-SHA:RSA-PSK-AES256-CBC-SHA384:DHE-PSK-AES256-CBC-SHA384:RSA-PSK-AES256-CBC-SHA:DHE-PSK-AES256-CBC-SHA:AES256-SHA:PSK-AES256-CBC-SHA384:PSK-AES256-CBC-SHA:ECDHE-PSK-AES128-CBC-SHA256:ECDHE-PSK-AES128-CBC-SHA:SRP-RSA-AES-128-CBC-SHA:SRP-AES-128-CBC-SHA:RSA-PSK-AES128-CBC-SHA256:DHE-PSK-AES128-CBC-SHA256:RSA-PSK-AES128-CBC-SHA:DHE-PSK-AES128-CBC-SHA:AES128-SHA:PSK-AES128-CBC-SHA256:PSK-AES128-CBC-SHA</pre>
+</details>
+<details>
+<summary>sudo nginx -t</summary>
+<pre>nginx: the configuration file /opt/homebrew/etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /opt/homebrew/etc/nginx/nginx.conf test is successful</pre>
+</details>
+<details>
+<summary>which -a php-fpm</summary>
+<pre>/opt/homebrew/opt/php/sbin/php-fpm
+/opt/homebrew/sbin/php-fpm</pre>
+</details>
+<details>
+<summary>/opt/homebrew/opt/php/sbin/php-fpm -v</summary>
+<pre>PHP 8.2.8 (fpm-fcgi) (built: Jul  6 2023 10:57:47)
+Copyright (c) The PHP Group
+Zend Engine v4.2.8, Copyright (c) Zend Technologies
+    with Xdebug v3.2.2, Copyright (c) 2002-2023, by Derick Rethans
+    with Zend OPcache v8.2.8, Copyright (c), by Zend Technologies</pre>
+</details>
+<details>
+<summary>sudo /opt/homebrew/opt/php/sbin/php-fpm -y /etc/php-fpm.conf --test</summary>
+<pre>[21-Jul-2023 16:51:38] ERROR: failed to open configuration file '/etc/php-fpm.conf': No such file or directory (2)
+[21-Jul-2023 16:51:38] ERROR: failed to load configuration file '/etc/php-fpm.conf'
+[21-Jul-2023 16:51:38] ERROR: FPM initialization failed</pre>
+</details>
+<details>
+<summary>ls -al ~/Library/LaunchAgents | grep homebrew</summary>
+<pre>-rw-r--r--    1 talph  staff   797 Apr 10 16:12 homebrew.mxcl.dnsmasq.plist
+-rw-r--r--    1 talph  staff   777 Apr 10 16:05 homebrew.mxcl.httpd.plist
+-rw-r--r--@   1 talph  staff   732 Jul 21 11:16 homebrew.mxcl.mysql.plist
+-rw-r--r--    1 talph  staff   685 Apr 10 16:05 homebrew.mxcl.nginx.plist
+-rw-r--r--@   1 talph  staff   781 Jul 21 16:12 homebrew.mxcl.php.plist</pre>
+</details>
+<details>
+<summary>ls -al /Library/LaunchAgents | grep homebrew</summary>
+<pre></pre>
+</details>
+<details>
+<summary>ls -al /Library/LaunchDaemons | grep homebrew</summary>
+<pre>-rw-r--r--@  1 root  admin   797 Jul 21 16:47 homebrew.mxcl.dnsmasq.plist
+-rw-r--r--@  1 root  admin   685 Jul 21 16:47 homebrew.mxcl.nginx.plist
+-rw-r--r--@  1 root  admin   781 Jul 21 16:47 homebrew.mxcl.php.plist
+-rw-r--r--@  1 root  admin   789 Jul 21 16:32 homebrew.mxcl.php@7.4.plist
+-rw-r--r--@  1 root  admin   789 Jul 21 16:32 homebrew.mxcl.php@8.0.plist</pre>
+</details>
+<details>
+<summary>ls -al /Library/LaunchDaemons | grep "com.laravel.valet."</summary>
+<pre></pre>
+</details>
+<details>
+<summary>ls -aln /etc/resolv.conf</summary>
+<pre>lrwxr-xr-x  1 0  0  22 Jun 15 12:08 /etc/resolv.conf -> ../var/run/resolv.conf</pre>
+</details>
+<details>
+<summary>cat /etc/resolv.conf</summary>
+<pre>#
+# macOS Notice
+#
+# This file is not consulted for DNS hostname resolution, address
+# resolution, or the DNS query routing mechanism used by most
+# processes on this system.
+#
+# To view the DNS configuration used by this system, use:
+#   scutil --dns
+#
+# SEE ALSO
+#   dns-sd(1), scutil(8)
+#
+# This file is automatically generated.
+#
+nameserver 8.8.8.8</pre>
+</details>
+<details>
+<summary>ifconfig lo0</summary>
+<pre>lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+	options=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
+	inet 127.0.0.1 netmask 0xff000000
+	inet6 ::1 prefixlen 128
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1
+	nd6 options=201<PERFORMNUD,DAD></pre>
+</details>
+<details>
+<summary>sh -c 'echo "------\n/opt/homebrew/etc/nginx/valet/valet.conf\n---\n"; cat /opt/homebrew/etc/nginx/valet/valet.conf | grep -n "# valet loopback"; echo "\n------\n"'</summary>
+<pre>------
+/opt/homebrew/etc/nginx/valet/valet.conf
+---
+
+3:    #listen VALET_LOOPBACK:80; # valet loopback
+
+------</pre>
+</details>
+<details>
+<summary>sh -c 'for file in ~/.config/valet/dnsmasq.d/*; do echo "------\n~/.config/valet/dnsmasq.d/$(basename $file)\n---\n"; cat $file; echo "\n------\n"; done'</summary>
+<pre>------
+~/.config/valet/dnsmasq.d/tld-test.conf
+---
+
+address=/.test/127.0.0.1
+listen-address=127.0.0.1
+
+------</pre>
+</details>
+<details>
+<summary>sh -c 'for file in ~/.config/valet/nginx/*; do echo "------\n~/.config/valet/nginx/$(basename $file)\n---\n"; cat $file | grep -n "# valet loopback"; echo "\n------\n"; done'</summary>
+<pre>------
+~/.config/valet/nginx/*
+---
+
+cat: /Users/talph/.config/valet/nginx/*: No such file or directory
+
+------</pre>
+</details>
